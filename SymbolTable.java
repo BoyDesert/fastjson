@@ -89,7 +89,7 @@ public class SymbolTable {
 
         String symbol = symbols[bucket];
         if (symbol != null) {
-            if (areSymbolsEqual(buffer, offset, length hash, symbol)) {
+            if (areSymbolsEqual(buffer.toCharArray(), offset, length, hash, symbol)) {
                 return symbol;
             }
 
